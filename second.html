@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second page of FA 2</title>
+</head>
+<body>
+    <button onclick = "showfirstImage()"> <h1>image 1</h1></button>
+    <button onclick = "showsecondImage()"><h1>image 2</h1></button>
+
+    <img id="img1" src="egg.jpg" style="display: none;">
+    <img id="img2" src="egg broken.webp" style="display: none;">
+
+    <script>
+        function showfirstImage(){
+            img1.style.display = 'block';
+            img2.style.display = 'none';
+        }
+        function showsecondImage(){
+            img1.style.display = 'none';
+            img2.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
